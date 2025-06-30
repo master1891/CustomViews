@@ -8,7 +8,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.nels.master.customviews.ui.examples.AnimacionesBasicasEjemplo
 import com.nels.master.customviews.ui.theme.CustomViewsTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,13 +23,22 @@ class MainActivity : ComponentActivity() {
                     Column(
                         modifier = Modifier.padding(innerPadding)
                     ) {
-
+                        AnimacionesBasicasEjemplo()
                     }
-
                 }
             }
         }
     }
 }
+
+@Composable
+fun MyComposable(){
+    Column(
+        modifier = Modifier.fillMaxSize()
+
+    ) {
+    }
+}
+
 
 
